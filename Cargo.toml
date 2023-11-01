@@ -1,0 +1,38 @@
+[package]
+name = "wgpu_complex_function"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wgpu = "0.17.1"
+cgmath = "0.18"
+env_logger = "0.10"
+futures = "0.3"
+gfx-hal = "0.9"
+image = "0.23"
+log = "0.4"
+pollster = "0.2"
+winit = "0.28" 
+anyhow = "1.0"
+rand = "0.8"
+bytemuck = { version = "1.13", features = ["derive"] }
+wgpu_simplified = { git = "https://github.com/jack1232/wgpu_simplified" }
+num-complex = "0.4.4"
+include-wgsl-oil = "0.2.3"
+
+[[example]]
+name = "complex3d_cpu"
+path = "examples/ch01/complex3d_cpu.rs"
+
+[[example]]
+name = "complex3d_gpu"
+path = "examples/ch02/complex3d_gpu.rs"
+
+[[example]]
+name = "domain_color"
+path = "examples/ch03/domain_color.rs"
+
+[[example]]
+name = "iterate_func"
+path = "examples/ch03/iterate_func.rs"
+
